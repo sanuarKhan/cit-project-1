@@ -1,0 +1,419 @@
+/***** global css scope *******/
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 86vw;
+  margin: 0 auto;
+}
+/* **************header start ************ */
+
+header {
+  width: 100%;
+  background: #eeedde;
+}
+/* **************navbar start ************ */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li {
+  margin-left: 100px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  height: 3px;
+  background: #f6762e;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+nav ul li:hover a::after {
+  width: 50%;
+}
+
+nav ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #203239;
+}
+nav ul li a:hover {
+  font-weight: 600;
+}
+
+/* **************navbar end ************ */
+
+/* **************banner start ************ */
+#banner-area {
+  display: flex;
+  margin-top: 156px;
+}
+#banner-area .banner-text {
+  width: 65%;
+  position: relative;
+}
+#banner-area .banner-img {
+  width: 35%;
+}
+#banner-area .banner-text h2 {
+  color: #203239;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 150%;
+  width: 777px;
+  margin-bottom: 24px;
+}
+
+#banner-area .banner-text p {
+  color: rgba(32, 50, 57, 0.5);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  width: 544px;
+  margin-bottom: 55px;
+}
+#banner-area .banner-text input {
+  height: 70px;
+  width: 508px;
+  background: #fff;
+  border: none;
+  border-radius: 15px;
+  padding-left: 56px;
+}
+#banner-area .banner-text input::placeholder {
+  color: #203239;
+  font-size: 16px;
+  font-weight: 300;
+}
+#banner-area .banner-text .banner-location-icon {
+  position: absolute;
+  bottom: 200px;
+  left: 20px;
+}
+#banner-area .banner-text button {
+  height: 70px;
+  width: 138px;
+  background: #fff;
+  border: none;
+  border-radius: 15px;
+  color: #203239;
+  font-size: 16px;
+  font-weight: 300;
+}
+#banner-area .banner-img img {
+  width: 100%;
+}
+/* **************banner end ************ */
+
+/* **************header end ************ */
+
+/* **************property start ************ */
+#property {
+  padding-top: 100px;
+  background: #fff;
+}
+#property h2 {
+  font-size: 36px;
+  font-weight: 600;
+  width: 533px;
+  color: #203239;
+  margin-bottom: 64px;
+}
+.property-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#property .property-card {
+  width: 300px;
+  height: 300px;
+  padding: 20px 32px;
+  margin-bottom: 100px;
+}
+
+#property .property-card h4 {
+  font-size: 16px;
+  color: #203239;
+  font-weight: 500;
+  margin-bottom: 8px;
+  position: relative;
+}
+#property .property-card span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ff7527;
+  font-weight: 500;
+  font-size: 16px;
+}
+#property .property-card h4::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -17px;
+  background: #ff7527;
+  width: 8px;
+  height: 30px;
+  display: none;
+}
+#property .property-card:hover h4::before {
+  display: inline-block;
+}
+#property .property-card:hover {
+  border-radius: 10px;
+  border: 1px solid #eeedde;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#property .property-card p {
+  font-size: 16px;
+  color: #203239;
+  font-weight: 300;
+  margin-bottom: 48px;
+}
+#property .property-card a {
+  font-size: 16px;
+  color: #203239;
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+#property .property-card a i {
+  margin-left: 8px;
+  color: #203239;
+}
+/* **************property end ************ */
+
+/* **************residen start ************ */
+#residen {
+  background: #eeedde;
+  padding-bottom: 163px;
+}
+#residen h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ff7527;
+  padding-top: 68px;
+}
+#residen h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #203239;
+  line-height: 150%;
+  margin-top: 8px;
+}
+#residen .residen-wrapper {
+  display: flex;
+  margin: 68px auto;
+}
+#residen .residen-wrapper .residen-img-box {
+  width: 50%;
+  position: relative;
+}
+/* #residen .residen-wrapper .residen-img-box .img-back{
+  position: relative;
+} */
+#residen .residen-wrapper .residen-img-box .img-front {
+  position: absolute;
+  top: 60px;
+  left: 167px;
+}
+#residen .residen-wrapper .residen-text-box {
+  width: 50%;
+}
+#residen .residen-wrapper .residen-text-box h3 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #203239;
+  line-height: 150%;
+  width: 506px;
+  margin-bottom: 24px;
+}
+#residen .residen-wrapper .residen-text-box p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #203239;
+  margin-bottom: 59px;
+}
+#residen .residen-wrapper .residen-text-box button {
+  font-size: 16px;
+  font-weight: 500;
+  color: #203239;
+  padding: 13px 41px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid #203239;
+  margin-left: 48px;
+}
+#residen .residen-wrapper .residen-text-box button i {
+  margin-right: 12px;
+}
+#residen .residen-wrapper .residen-text-box button:hover {
+  background: #203239;
+  color: #fff;
+}
+/* **************residen end ************ */
+
+/* **************pilihan start ************ */
+#pilihan {
+  background: #fff;
+}
+#pilihan h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ff7527;
+  padding-top: 68px;
+}
+#pilihan h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #203239;
+  line-height: 150%;
+  margin-top: 8px;
+}
+#pilihan .pilihan-wrapper {
+  display: flex;
+  margin: 68px auto;
+}
+.pilihan-card {
+  margin: 0 24px 0 0;
+}
+#pilihan .pilihan-wrapper .pilihan-card h4 {
+  color: #203239;
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+#pilihan .pilihan-wrapper .pilihan-card p {
+  color: #203239;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  width: 356px;
+}
+
+/* **************pilihan end ************ */
+
+/* **************Hubungi start ************ */
+#Hubungi {
+  background: #eeedde;
+}
+#Hubungi .hubungi-wrapper {
+  display: flex;
+  padding-bottom: 48px;
+}
+#Hubungi .hubungi-wrapper .call {
+  width: 50%;
+}
+#Hubungi .hubungi-wrapper .call h2 {
+  font-size: 36px;
+  color: #203239;
+  font-weight: 600;
+  line-height: 150%;
+  padding-top: 48px;
+}
+#Hubungi .hubungi-wrapper .call .card-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+#Hubungi .hubungi-wrapper .call .call-card {
+  background: #fff;
+  width: 274px;
+  height: 167px;
+  margin-top: 74px;
+  /* text-align: center; */
+  padding: 15px 83px;
+  border-radius: 10px;
+  position: relative;
+}
+#Hubungi .hubungi-wrapper .call .call-card:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#Hubungi .hubungi-wrapper .call .call-card .call-card-phone {
+  position: absolute;
+  top: 36px;
+  left: 41px;
+  width: 10px;
+  height: 20px;
+}
+#Hubungi .hubungi-wrapper .call .call-card h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #203239;
+}
+#Hubungi .hubungi-wrapper .call .call-card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #203239;
+  margin-top: 8px;
+}
+#Hubungi .hubungi-wrapper .call .call-card button {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #203239;
+  color: #fff;
+  padding: 10px 17px;
+  margin-top: 27px;
+  border-radius: 5px;
+}
+#Hubungi .hubungi-wrapper .penghargaam {
+  width: 50%;
+  margin-top: 88px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#Hubungi .hubungi-wrapper .penghargaam h2 {
+  color: #203239;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 69px;
+}
+/* **************Hubungi end ************ */
+
+/* **************footer start ************ */
+footer {
+  background: #203239;
+  padding: 31px 0;
+}
+footer .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-icons {
+  display: flex;
+  gap: 48px;
+}
+footer .footer-icons i {
+  color: #fff;
+}
+/* **************footer end ************ */
